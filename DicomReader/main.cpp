@@ -1,5 +1,5 @@
-#include<iostream>
-using namespace std;
+#define vtkRenderingCore_AUTOINIT 2(vtkRenderingOpenGL2, vtkInteractionStyle)
+
 #include <vtkSmartPointer.h>
 #include <vtkImageViewer2.h>
 #include <vtkDICOMImageReader.h>
@@ -7,17 +7,11 @@ using namespace std;
 #include <vtkRenderWindowInteractor.h>
 #include <vtkRenderer.h>
 
+#include<iostream>
+using namespace std;
 
 void main() {
-	// Verify input arguments
-	/* if ( argc != 2 )
-	{
-	std::cout << "Usage: " << argv[0]
-	<< " Filename(.img)" << std::endl;
-	return EXIT_FAILURE;
-	}
-	*/
-	//std::string inputFilename = argv[1];
+	
 	std::string inputFilename = "prostate.img";
 
 	// Read all the DICOM files in the specified directory.
