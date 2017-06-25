@@ -1,10 +1,10 @@
 # DicomReader
 
-##Requerimientos
+## Requerimientos
 - Visual Studio 15 2017
 - vtk-7.1
 
-##Librerias:
+## Librerias:
 
 el proyecto tiene configurado las liberias de VTK en esas ubicaciones de Disco, verficar:
 
